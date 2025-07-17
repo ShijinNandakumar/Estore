@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body class="bg-light">
+
+<div class="container py-3">
+    <div class="text-end mb-4">
+  {% if session.get('user') %}
+    Welcome, {{ session.get('user') }} |
+    <a href="{{ url_for('logout') }}">Logout</a>
+  {% else %}
+    <a href="{{ url_for('login') }}">Login</a> |
+    <a href="{{ url_for('register') }}">Register</a>
+  {% endif %}
+  |
+  <a href="{{ url_for('cart') }}">🛒 Cart</a>
+</div>
+
+
+  <!-- Login / Logout & Cart Links -->
+  
+
+  <h2 class="mb-4">🛒 Your Shopping Cart</h2>
+
+  {% if cart_items %}
+    <ul class="list-group mb-3">
+      {% for item in cart_items %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            {{ item.name }} <br />
+            <small>Qty: {{ item.quantity }} × ${{ item.price }} = ${{ item.total_price }}</small>
+          </div>
+          <a href="{{ url_for('remove_from_cart', product_id=item.id) }}" class="btn btn-sm btn-outline-danger">Remove</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h5>Total: ${{ total }}</h5>
+
+    <form method="POST" action="{{ url_for('book') }}">
+      <button type="submit" class="btn btn-success">Book Now</button>
+    </form>
+
+    <a href="{{ url_for('index') }}" class="btn btn-primary mt-3">Continue Shopping</a>
+  {% else %}
+    <p>Your cart is empty.</p>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Browse Products</a>
+  {% endif %}
+
+</div>
+
+</body>
+</html>

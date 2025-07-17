@@ -1,0 +1,72 @@
+* Light Theme (default) */
+:root {
+  --bg-color: #fff;
+  --text-color: #212529;
+  --card-bg: #fff;
+  --card-border: #ddd;
+  --btn-primary-bg: #0d6efd;
+  --btn-primary-color: #fff;
+}
+
+/* Dark /Theme */
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #eee;
+  --card-bg: #1e1e1e;
+  --card-border: #333;
+  --btn-primary-bg: #375a7f;
+  --btn-primary-color: #fff;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: var(--btn-primary-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Navbar color adjustments */
+nav#main-nav[data-theme='dark'] {
+  background-color: #222 !important;
+}
+
+nav#main-nav {
+  transition: background-color 0.3s ease;
+}
+
+.product-img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-img:hover {
+  transform: scale(1.03);
+}
+
+
+img.img-fluid {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+
+

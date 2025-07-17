@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Home - projectSTORE{% endblock %}
+
+{% block content %}
+  <div class="container my-4">
+  <h2 style="text-align: center;">Shop by Style</h2>
+  <div class="row">
+    {% for cat in categories %}
+    <div class="col-md-4 text-center">
+      <a href="{{ url_for('category_products', category_name=cat.name) }}">
+        <img src="{{ url_for('static', filename=cat.image) }}" class="img-fluid rounded shadow-sm" alt="{{ cat.name }}">
+        <h5 class="mt-2">{{ cat.name }}</h5>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

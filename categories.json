@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Shoe",
+    "image": "categories/shoes.jpg",
+    "description": "Stylish and comfortable footwear."
+  },
+  {
+    "id": 2,
+    "name": "Bag",
+    "image": "categories/bags.jpg",
+    "description": "Trendy and functional bags."
+  },
+  {
+    "id": 3,
+    "name": "Watch",
+    "image": "categories/watches.jpg",
+    "description": "Modern and classic wristwatches."
+  }
+]

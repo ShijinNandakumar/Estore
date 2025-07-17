@@ -1,0 +1,143 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Air Max",
+    "price": 120,
+    "image": "images/nike_air_max.jpg",
+    "category": "shoe"
+  },
+  {
+    "id": 2,
+    "name": "Adidas Ultraboost",
+    "price": 140,
+    "image": "images/adidas_ultraboost.jpg",
+    "category": "shoe"
+  },
+  {
+    "id": 3,
+    "name": "Puma Runner",
+    "price": 100,
+    "image": "images/puma_runner.jpg",
+    "category": "shoe"
+  },
+  {
+    "id": 4,
+    "name": "Rolex Submariner",
+    "price": 999,
+    "image": "images/rolex_submariner.jpg",
+    "category": "watch"
+  },
+  {
+    "id": 5,
+    "name": "Casio G-Shock",
+    "price": 150,
+    "image": "images/casio_gshock.jpg",
+    "category": "watch"
+  },
+  {
+    "id": 6,
+    "name": "Fossil Grant",
+    "price": 180,
+    "image": "images/fossil_grant.jpg",
+    "category": "watch"
+  },
+  {
+    "id": 7,
+    "name": "Leather Backpack",
+    "price": 85,
+    "image": "images/leather_backpack.jpg",
+    "category": "bag"
+  },
+  {
+    "id": 8,
+    "name": "Nike Gym Bag",
+    "price": 60,
+    "image": "images/nike_gym_bag.jpg",
+    "category": "bag"
+  },
+  {
+    "id": 9,
+    "name": "Travel Duffel",
+    "price": 110,
+    "image": "images/travel_duffel.jpg",
+    "category": "bag"
+  },
+  {
+    "id": 10,
+    "name": "Sneaker Shield Pro",
+    "price": 15,
+    "image": "images/sneaker_shield.jpg",
+    "category": "shoe"
+  },
+  {
+    "id": 11,
+    "name": "Reebok Classic",
+    "price": 110,
+    "image": "images/reebok_classic.jpg",
+    "category": "shoe"
+  },
+  {
+    "id": 12,
+    "name": "Seiko Prospex",
+    "price": 350,
+    "image": "images/seiko_prospex.jpg",
+    "category": "watch"
+  },
+  {
+    "id": 13,
+    "name": "Michael Kors Tote",
+    "price": 220,
+    "image": "images/michael_kors_tote.jpg",
+    "category": "bag"
+  },
+  {
+    "id": 14,
+    "name": "Converse All Star",
+    "price": 75,
+    "image": "images/converse_all_star.jpg",
+    "category": "shoe"
+  },
+  {
+    "id": 15,
+    "name": "Daniel Wellington Classic",
+    "price": 250,
+    "image": "images/dw_classic.jpg",
+    "category": "watch"
+  },
+  {
+    "id": 16,
+    "name": "Gucci Leather Belt Bag",
+    "price": 900,
+    "image": "images/gucci_belt_bag.jpg",
+    "category": "bag"
+  },
+  {
+    "id": 17,
+    "name": "New Balance 990v5",
+    "price": 175,
+    "image": "images/new_balance_990v5.jpg",
+    "category": "shoe"
+  },
+  {
+    "id": 18,
+    "name": "Tag Heuer Carrera",
+    "price": 1800,
+    "image": "images/tag_heuer_carrera.jpg",
+    "category": "watch"
+  },
+  {
+    "id": 19,
+    "name": "Herschel Little America",
+    "price": 130,
+    "image": "images/herschel_little_america.jpg",
+    "category": "bag"
+  },
+  {
+    "id": 20,
+    "name": "Vans Old Skool",
+    "price": 60,
+    "image": "images/vans_old_skool.jpg",
+    "category": "shoe"
+  }
+]
+
