@@ -36,5 +36,45 @@
 
 1. Clone this repository:
 
-   ```bash
    git clone https://github.com/shijinnandakumar/Estore.git
+
+2.Navigate into the project directory:
+
+   cd Estore
+
+3.(Optional) Create and activate a virtual environment:
+
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+4.Install required dependencies:
+
+   pip install Flask
+
+**Running the Application**
+
+Run the Flask app with:
+
+   python app.py
+Open your browser and visit: http://127.0.0.1:5000
+
+**Usage**
+
+*Browse products by categories from the home page
+*View product details and add items to your cart
+*Register or log in to manage your cart and make bookings
+*Admin users can access the dashboard to add, edit, or delete products
+
+**Future Improvements**
+*Replace JSON storage with a real database (SQLite, PostgreSQL, etc.)
+*Add user roles with advanced permissions
+*Integrate payment gateways
+*Improve UI/UX with better design and accessibility
+*Deploy to cloud platforms for public access
+
+**License**
+This project is open-source and available under the MIT License.
+
+**Contact**
+Created by Shijin Nandakumar
+Email: shijinnandakumarr@gmail.com
