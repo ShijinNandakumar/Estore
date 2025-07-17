@@ -7,30 +7,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
-<body class="bg-light">
-<div class="container my-4">
-  <h2 class="mb-4">Shop by Category</h2>
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <a href="{{ url_for('category_products', category='shoes') }}">
-        <img src="{{ url_for('static', filename='categories/shoes.jpg') }}" class="img-fluid rounded shadow-sm" alt="Shoes">
-        <h5 class="mt-2">Shoes</h5>
-      </a>
-    </div>
-    <div class="col-md-4 text-center">
-      <a href="{{ url_for('category_products', category='bags') }}">
-        <img src="{{ url_for('static', filename='categories/bags.jpg') }}" class="img-fluid rounded shadow-sm" alt="Bags">
-        <h5 class="mt-2">Bags</h5>
-      </a>
-    </div>
-    <div class="col-md-4 text-center">
-      <a href="{{ url_for('category_products', category='accessories') }}">
-        <img src="{{ url_for('static', filename='categories/accessories.jpg') }}" class="img-fluid rounded shadow-sm" alt="Accessories">
-        <h5 class="mt-2">Accessories</h5>
-      </a>
-    </div>
-  </div>
-</div>
+
 
 <div class="container py-3">
   <div class="text-end mb-4">
@@ -55,7 +32,7 @@
       <h2>{{ product.name }}</h2>
       <p class="lead">${{ product.price }}</p>
       <a href="{{ url_for('add_to_cart', product_id=product.id) }}" class="btn btn-success">Add to Cart</a>
-    </div>
+    </div>  
   </div>
 </div>
 

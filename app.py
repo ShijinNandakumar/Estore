@@ -1,6 +1,8 @@
 from flask import Flask, render_template, redirect, url_for, request, session, flash
 import json
 import os
+import datetime
+
 
 from functools import wraps
 
@@ -15,12 +17,22 @@ def admin_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
+BOOKINGS_FILE = 'bookings.json'
+
+
 def load_bookings():
-    try:
-        with open('bookings.json') as f:
-            return json.load(f)
-    except FileNotFoundError:
+    if not os.path.exists(BOOKINGS_FILE):
         return []
+    with open(BOOKINGS_FILE, 'r') as f:
+        try:
+            data = json.load(f)
+            if isinstance(data, list):
+                return data
+            else:
+                return []
+        except json.JSONDecodeError:
+            # file is empty or corrupted
+            return []
 
 def save_bookings(bookings):
     with open('bookings.json', 'w') as f:
